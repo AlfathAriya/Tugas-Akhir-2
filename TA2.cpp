@@ -4,7 +4,9 @@ using namespace std;
 struct Mahasiswa { string nama, npm; };
 
 void tukar(Mahasiswa &a, Mahasiswa &b) {
-    Mahasiswa temp = a; a = b; b = temp;
+    Mahasiswa temp = a; 
+    a = b; 
+    b = temp;
 }
 
 int main() {
