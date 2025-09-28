@@ -27,7 +27,7 @@ int main() {
         for (int j = 0; j < n-i-1; j++)
             if (mhs[j].npm > mhs[j+1].npm) tukar(mhs[j], mhs[j+1]);
 
-    cout << "\n=== Data Mahasiswa setelah diurutkan (berdasarkan NPM) ===\n";
+    cout << "\n=== Data Mahasiswa setelah diurutkan berdasarkan NPM ===\n";
     for (int i = 0; i < n; i++)
         cout << i+1 << ". " << mhs[i].nama << " | " << mhs[i].npm << endl;
 }
