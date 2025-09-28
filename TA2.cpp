@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-struct Mahasiswa { string nama, npm; };
+struct Mahasiswa { 
+    string nama, npm; 
+};
 
 void tukar(Mahasiswa &a, Mahasiswa &b) {
     Mahasiswa temp = a; 
@@ -21,7 +23,6 @@ int main() {
         cout << "NPM  : "; getline(cin, mhs[i].npm);
     }
 
-    // Bubble Sort berdasarkan NPM
     for (int i = 0; i < n-1; i++)
         for (int j = 0; j < n-i-1; j++)
             if (mhs[j].npm > mhs[j+1].npm) tukar(mhs[j], mhs[j+1]);
